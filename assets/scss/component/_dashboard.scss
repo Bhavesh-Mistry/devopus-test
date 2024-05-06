@@ -1,0 +1,1113 @@
+/*banner section start*/
+.banner-sec {
+  position: relative;
+  margin-top: 86px;
+  overflow: hidden;
+
+  @media ($desktops) {
+    margin-top: 75px;
+  }
+
+
+  .bs-desc {
+    padding: 0px 0 0;
+    position: relative;
+
+    h3 {
+      color: #ffffff;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.2;
+      text-align: left;
+      margin: 0px 0 0 0;
+
+      @media ($desktops) {
+        font-size: 28px;
+        line-height: 38px;
+      }
+
+      @media ($portrait-phones) {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0;
+      }
+    }
+
+    p {
+      color: #ffffff;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 20px;
+      letter-spacing: 1px;
+      line-height: 1.3;
+      text-align: left;
+      margin: 20px 0 30px;
+
+      @media ($desktops) {
+        font-size: 16px;
+      }
+
+      @media ($portrait-phones) {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .btn {
+      max-width: 200px;
+
+      &.btnBookappointment {
+        max-width: 200px;
+      }
+
+      @media ($portrait-phones) {
+        margin: 0 0 20px;
+      }
+    }
+  }
+
+  .carousel {
+    .carousel-item {
+      padding: 250px 0 300px 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+
+      @media ($portrait-phones) {
+        padding: 170px 0 230px 0;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $darkcharcoal;
+        opacity: 0.8;
+        z-index: 0;
+      }
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      width: auto;
+      font-size: 20px;
+      background-color: rgba($mblue, .6);
+      opacity: 0;
+      height: 80px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &:hover {
+        background-color: rgba($mblue, 1);
+      }
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      background-image: none;
+      line-height: 2rem;
+    }
+
+
+    &:hover {
+
+      .carousel-control-next,
+      .carousel-control-prev {
+        opacity: 1;
+      }
+
+      @media ($portrait-phones) {
+
+        .carousel-control-next,
+        .carousel-control-prev {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+}
+
+/*banner section end*/
+
+/*Timing section start*/
+.timing-sec {
+  position: relative;
+  margin: -60px 0 0;
+  overflow: hidden;
+
+  @media ($portrait-phones) {
+    margin: -30px 0 0;
+  }
+
+  .ts-box {
+    position: relative;
+    padding: 30px;
+    color: #fff;
+    background-color: $lightblue;
+    height: 100%;
+    overflow: hidden;
+    transition: all .5s;
+
+    @media ($desktops) {
+      padding: 20px;
+    }
+
+    &.mblue {
+      background-color: $mblue;
+    }
+
+    &.dblue {
+      background-color: $dblue;
+    }
+
+    .icon {
+      font-size: 30px;
+    }
+
+    h5 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 20px 0 15px;
+      line-height: 1.3;
+
+      @media ($tablets) {
+        font-size: 18px;
+      }
+    }
+
+    h4 {
+      color: $white;
+      font-size: 30px;
+      line-height: 1;
+      margin: 0 0 20px;
+      font-weight: 700;
+
+      @media ($tablets) {
+        font-size: 22px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.4;
+      margin: 0;
+
+      @media ($desktops) {
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      @media ($tablets) {
+        font-size: 14px;
+        -webkit-line-clamp: 6;
+      }
+
+      span {
+        font-size: inherit;
+
+        &.ts-first {
+          width: 50%;
+        }
+      }
+
+      &.br-down {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $white;
+        padding: 0 0 8px;
+        margin: 0 0 8px;
+      }
+    }
+
+    .ts-hover {
+      background-color: $dimgray;
+      padding: 15px 30px;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      visibility: hidden;
+      transform: translate(0, 0) scaleY(0);
+      right: 0;
+      transition: all .3s;
+
+      .btn {
+        min-width: inherit;
+
+        &.btn-outline-white {
+          border-radius: 30px;
+          display: inline-flex;
+          min-height: inherit;
+          padding: 8px 15px;
+
+          &:hover {
+            transform: inherit;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      transform: translate(0, -67px) scaleY(1);
+      overflow: visible;
+
+      .ts-hover {
+        transform: translate(0, 0px) scaleY(1);
+        visibility: visible;
+      }
+    }
+  }
+}
+
+/*Timing section end*/
+
+/*Finest section end*/
+.finest-sec {
+  position: relative;
+  padding: 30px 0 0;
+  overflow: hidden;
+
+  @media ($tablets) {
+    padding: 40px 0 30px 0;
+  }
+
+  h4 {
+    font-size: 40px;
+    line-height: 1.4;
+    margin: 0 0 50px;
+    color: $darkcharcoal;
+    font-weight: 400;
+
+    @media ($desktops) {
+      font-size: 35px;
+      margin: 0 0 35px;
+    }
+
+    @media ($tablets) {
+      font-size: 20px;
+      margin: 0 0 25px;
+    }
+
+    @media ($portrait-phones) {
+      text-align: center;
+    }
+
+    span {
+      font-weight: 700;
+      display: block;
+      font-size: 45px;
+
+      // color: $lightpink;
+      @media ($desktops) {
+        font-size: 40px;
+      }
+
+      @media ($tablets) {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .btn {
+    &.btnConnectD {
+      @media ($portrait-phones) {
+        margin: 0 25px;
+      }
+    }
+  }
+
+  ul {
+    li {
+      color: $dimgray;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.3;
+      margin: 0 0 10px;
+      display: flex;
+
+      @media ($desktops) {
+        font-size: 14px;
+      }
+
+      @media ($portrait-phones) {
+        justify-content: center;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+
+      .icon {
+        margin-bottom: auto;
+        color: $dblue;
+      }
+    }
+  }
+
+  .img {
+    @media ($tablets) {
+      margin: 0 0 -40px;
+    }
+  }
+}
+
+/*Finest section end*/
+
+
+/*Quote section end*/
+.quote-sec {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 150px 0;
+  z-index: 1;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $darkcharcoal;
+    z-index: -1;
+    opacity: .4;
+  }
+
+  @media($large-desktops) {
+    padding: 100px 0;
+  }
+
+  @media ($tablets) {
+    padding: 80px 0;
+  }
+
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 25px;
+    color: $white;
+
+    @media ($tablets) {
+      font-size: 30px;
+      margin: 0 0 20px;
+    }
+
+    @media ($portrait-phones) {
+      font-size: 25px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0;
+    font-weight: 600;
+    color: $lightblue;
+
+    @media ($tablets) {
+      font-size: 18px;
+    }
+
+    @media ($portrait-phones) {
+      font-size: 16px;
+    }
+  }
+}
+
+/*Quote section end*/
+
+/*Services section end*/
+.services-sec {
+  position: relative;
+  padding: 70px 0 30px;
+  background-color: $snow;
+  overflow: hidden;
+
+  .ss-item {
+    position: relative;
+    margin: 0 0 40px;
+    padding: 0 50px 0 0;
+
+
+    @media ($portrait-phones) {
+      padding: 0 30px;
+    }
+
+    .icon {
+      transition: all .5s;
+      max-width: 87px;
+      padding-right: 20px;
+    }
+
+    h5 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0px 0 10px;
+      line-height: 1.1;
+      color: $darkcharcoal;
+
+      @media ($tablets) {
+        font-size: 18px;
+      }
+
+
+    }
+
+    p {
+      font-size: 16px;
+      color: $dimgray;
+      font-weight: 400;
+      margin: 0;
+      line-height: 1.2;
+
+      @media ($tablets) {
+        font-size: 14px;
+      }
+    }
+
+    &:hover {
+      .icon {
+        transform: scale(1.1);
+      }
+
+    }
+  }
+}
+
+/*Services section end*/
+
+/*Products section end*/
+.products-sec {
+  position: relative;
+  padding: 75px 0;
+  overflow-x: hidden;
+
+  @media ($tablets) {
+    padding: 55px 0 25px;
+  }
+
+  h4 {
+    font-size: 40px;
+    line-height: 1.3;
+    margin: 0 0 15px;
+    color: $darkcharcoal;
+    font-weight: 700;
+    text-align: center;
+
+    @media ($tablets) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 30px;
+    color: $dimgray;
+    text-align: center;
+
+    @media ($tablets) {
+      font-size: 16px;
+      margin: 0 0 20px;
+    }
+  }
+
+  .ps-items-bx {
+    .ps-item {
+      background-color: $white;
+      position: relative;
+      text-align: center;
+      padding: 0 0 0px;
+      border: 1px solid rgba(0, 40, 104, 0.2);
+      box-shadow: 0px 10px 30px 0px rgba(205, 205, 205, 0.33);
+
+      &:hover {
+        border-color: $mblue;
+        cursor: pointer;
+
+        .img {
+          &:before {
+            visibility: visible;
+            opacity: .8;
+          }
+
+          .link-more {
+            opacity: 1;
+            transform: translateY(-50%);
+            z-index: 9;
+          }
+
+          img {
+            transform: scale(1.1) rotate(-5deg);
+          }
+        }
+
+        h5 {
+          color: $mblue;
+        }
+      }
+
+      .img {
+        width: 100%;
+        display: block;
+        text-align: center;
+        height: 100%;
+        background-color: $white;
+        overflow: hidden;
+        position: relative;
+
+        &:before {
+          position: absolute;
+          background: #061538;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          content: "";
+          opacity: 0;
+          transition: all 0.3s linear;
+          visibility: hidden;
+          z-index: 9;
+        }
+
+        img {
+          width: 100%;
+          transition: all .5s;
+          height: 100%;
+          position: relative;
+          display: block;
+          object-fit: cover;
+        }
+
+        .link-more {
+          position: absolute;
+          top: 50%;
+          text-align: center;
+          right: 0;
+          left: 0;
+          font-size: 45px;
+          color: $mblue;
+          z-index: 999;
+          opacity: 0;
+          transition: all 0.3s linear;
+        }
+      }
+
+      h5 {
+        font-size: 20px;
+        font-weight: 700;
+        color: $darkcharcoal;
+        margin: 0px 0 0;
+        padding: 20px;
+
+        @media ($tablets) {
+          font-size: 16px;
+        }
+      }
+
+    }
+
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all .5s;
+      width: 40px;
+      height: 40px;
+      border-radius: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $mblue;
+      color: $white;
+      margin: 0;
+      font-size: 0px;
+      z-index: 1;
+      border: 0;
+      box-shadow: 0 0 5px 3px rgba($cblack, .12);
+
+      @media ($desktops) {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &:before {
+        font-size: 18px;
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 400;
+      }
+
+      &.slick-prev {
+        left: 0;
+
+        &:before {
+          content: "\f177";
+        }
+      }
+
+      &.slick-next {
+        right: 0;
+        left: inherit;
+
+        &:before {
+          content: "\f178";
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: $cbluehover;
+      }
+
+      &.slick-disabled {
+        pointer-events: none;
+        background-color: rgba($mblue, .5);
+        box-shadow: none;
+      }
+    }
+
+    &:hover {
+      .slick-arrow {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+  }
+
+}
+
+/*Products section end*/
+
+
+/*strength section end*/
+.strength-sec {
+  position: relative;
+  padding: 75px 0;
+  overflow-x: hidden;
+
+  @media ($tablets) {
+    padding: 55px 0 25px;
+  }
+
+  h4 {
+    font-size: 40px;
+    line-height: 1.3;
+    margin: 0 0 15px;
+    color: $darkcharcoal;
+    font-weight: 700;
+    text-align: center;
+
+    @media ($tablets) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 30px;
+    color: $dimgray;
+    text-align: center;
+
+    @media ($tablets) {
+      font-size: 16px;
+      margin: 0 0 20px;
+    }
+  }
+
+
+  .strength-item {
+    position: relative;
+    display: block;
+    height: 400px;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: #000;
+      opacity: .4;
+      z-index: 1;
+      transition: .3s;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+      object-fit: cover;
+      -webkit-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+    }
+
+    .si-desc {
+      position: absolute;
+      bottom: 30px;
+      padding: 0px 30px 0px 30px;
+      left: 0;
+      color: $white;
+      z-index: 1;
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      text-align: left;
+
+      h5 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        color: $white;
+        margin: 0;
+      }
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0.7;
+      }
+
+      img {
+        -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        transform: scale(1.03);
+        -webkit-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+      }
+
+      .si-desc {
+        bottom: 50px;
+        -webkit-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+      }
+
+    }
+  }
+}
+
+/*strength section End*/
+
+
+/*Dream section start*/
+.dream-sec {
+  position: relative;
+  padding: 95px 0px 86px;
+  background: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden;
+  background-image: url(../images/dream-bg.jpg);
+
+  &:before {
+    background: #061538;
+    opacity: 0.8;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .play-video {
+    color: $white;
+    z-index: 10;
+    top: 50%;
+    height: 100px;
+    width: 100px;
+    background: $mblue;
+    display: inline-block;
+    text-align: center;
+    line-height: 115px;
+    border-radius: 50%;
+    transition: all .2s linear;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    position: relative;
+
+    i {
+      color: #fff;
+      font-size: 30px;
+      margin-left: 7px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      display: block;
+      width: 120px;
+      height: 120px;
+      background: $mblue;
+      border-radius: 50%;
+      animation: pulse-border 1500ms ease-out infinite;
+    }
+
+    @keyframes pulse-border {
+      0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+      }
+    }
+  }
+
+  h4 {
+    font-size: 30px;
+    line-height: 1.8;
+    margin: 0 0 30px;
+    color: $mblue;
+    font-weight: 600;
+    text-align: left;
+    position: relative;
+
+    span {
+      display: block;
+      font-size: 40px;
+      font-weight: 700;
+      color: $white;
+    }
+
+    @media ($tablets) {
+      font-size: 25px;
+      margin-top: 50px;
+
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 60px;
+    color: $white;
+    font-weight: 400;
+    text-align: left;
+    position: relative;
+  }
+
+  .img {
+    position: relative;
+  }
+
+  h5 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 30px 0 0 0px;
+    font-weight: 600;
+    text-align: left;
+    position: relative;
+    color: $white;
+
+    span {
+      margin: 5px 0 0 0;
+      display: block;
+      color: $mblue;
+      font-weight: 700;
+    }
+
+    @media ($tablets) {
+      font-size: 16px;
+
+    }
+  }
+}
+
+/*Dream section end*/
+
+/*Health Progress section Start*/
+.health-progress-sec {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+
+  @media ($desktops) {
+    padding: 70px 0;
+  }
+
+  @media ($tablets) {
+    padding: 55px 0;
+  }
+
+  h4 {
+    font-size: 40px;
+    line-height: 1.4;
+    margin: 0 0 30px;
+    color: $darkcharcoal;
+    font-weight: 400;
+
+    @media ($desktops) {
+      font-size: 35px;
+      margin: 0 0 35px;
+    }
+
+    @media ($tablets) {
+      font-size: 25px;
+      margin: 0 0 15px;
+    }
+
+    span {
+      font-weight: 700;
+      display: block;
+      font-size: 45px;
+
+      // color: $lightpink;
+      @media ($desktops) {
+        font-size: 40px;
+      }
+
+      @media ($tablets) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  p {
+    color: $dimgray;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 0px;
+    max-width: 80%;
+
+    @media($large-desktops) {
+      max-width: 95%;
+    }
+
+    @media ($tablets) {
+      font-size: 16px;
+      margin: 0 0 35px;
+    }
+  }
+
+  .client-img-box {
+    display: block;
+    position: relative;
+    border: 1px solid rgba(0, 40, 104, .30);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+}
+
+/*Health Progress section end*/
+
+/*testimonials section start*/
+.testimonials-sec {
+  position: relative;
+  padding: 80px 0 80px;
+  background-color: $snow;
+  overflow-x: hidden;
+
+  @media ($desktops) {
+    padding: 60px 0;
+  }
+
+  h4 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0 0 0px;
+    color: $darkcharcoal;
+    font-weight: 700;
+
+    @media ($tablets) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 5px 0 0px;
+    color: $dimgray;
+
+    @media ($tablets) {
+      font-size: 16px;
+      max-width: 80%;
+    }
+
+    @media ($portrait-phones) {
+      max-width: 100%;
+    }
+  }
+
+  .ts-items-bx {
+    position: relative;
+    margin: 0 0 0px 0;
+
+    @media ($portrait-phones) {
+      margin: 0 0 0px 0;
+    }
+
+    .ts-item {
+      position: relative;
+      background-color: $white;
+      overflow: hidden;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 40, 104, .30);
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    &.slick-slider {
+      .slick-list {
+        .slick-slide {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+}
+
+/*testimonials section end*/

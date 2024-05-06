@@ -1,0 +1,134 @@
+header {
+   &.navbar {
+      background-color: $white;
+      padding: 8px 0;
+      transition: all .5s;
+      z-index: 999;
+
+      &.darkHeader {
+         top: 0;
+         left: 0;
+         right: 0;
+         box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+         padding: 5px 0;
+
+         @media($desktops) {
+
+            .navbar-brand {
+               img {
+                  max-width: 80%;
+               }
+            }
+         }
+
+         @media($tablets) {
+            .navbar-collapse {
+               top: 76px;
+            }
+         }
+      }
+
+      .navbar-brand {
+         margin: 0;
+         padding: 0;
+         transition: all .5s;
+      }
+
+      .navbar-toggler {
+         padding: 0;
+         position: relative;
+         color: $mblue;
+         line-height: 1;
+         margin-left: auto;
+
+         &:focus {
+            box-shadow: none;
+         }
+      }
+
+      .navbar-nav {
+         .nav-item {
+            margin: 0 20px;
+
+            .nav-link {
+               font-size: 16px;
+               font-weight: 600;
+               color: $darkcharcoal;
+               padding: 25px 0;
+               position: relative;
+
+               &:hover,
+               &.active {
+                  color: $mblue;
+               }
+            }
+         }
+      }
+
+      .navbar-collapse {
+         @media($tablets) {
+            position: absolute;
+            top: 86px;
+            left: 0;
+            right: 0;
+            background-color: $lightgray;
+            z-index: 99;
+
+            .navbar-nav {
+               margin: 0;
+
+               .nav-item {
+                  margin: 0 0px;
+
+                  .nav-link {
+                     padding: 15px 35px;
+                     border-bottom: 1px solid $mblue;
+
+                     @media($portrait-phones) {
+                        padding: 15px;
+                     }
+
+                     &:hover,
+                     &.active {
+                        background-color: $mblue;
+                        color: $white;
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      .lnkCart {
+         font-size: 20px;
+         color: $darkcharcoal;
+         position: relative;
+         margin-left: 20px;
+
+         @media($tablets) {
+            position: absolute;
+            right: 85px;
+            margin: 0;
+            z-index: 8;
+         }
+
+         @media($portrait-phones) {
+            right: 55px;
+         }
+
+         span {
+            position: absolute;
+            bottom: 100%;
+            left: 100%;
+            background-color: $mblue;
+            padding: 3px 5px;
+            font-size: 10px;
+            line-height: 1;
+            color: $white;
+            border-radius: 50%;
+            margin: 0 0 -7px -8px;
+            font-weight: 400;
+         }
+      }
+   }
+}

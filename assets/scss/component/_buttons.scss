@@ -1,0 +1,75 @@
+// @import "fonts";
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3.2px;
+  min-width: 186px;
+  min-height: 45px;
+  color: $white;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 15px;
+  line-height: 18px;
+  border: 0;
+  font-family: "Titillium Web", sans-serif;
+  transition: 0.3s all;
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  // &:hover {
+  //   transform: rotate(-2deg);
+  // }
+
+  &.btn-lightpink {
+    background-color: $lightpink;
+    color: $white;
+
+    &:hover {
+      background-color: $lightpinkhover;
+      color: $white;
+    }
+  }
+
+  &.btn-blue {
+    background-color: $mblue;
+    color: $white;
+
+    &:hover {
+      background-color: $cbluehover;
+      color: $white;
+    }
+  }
+
+  &.btn-outline-white {
+    background-color: transparent;
+    color: $white;
+    border: 2px solid $white;
+
+    &:hover {
+      background-color: $white;
+      color: $mblue;
+      border-color: $mblue;
+    }
+  }
+
+  &.btn-gradientblue {
+    background: rgb(46, 196, 184);
+    background: radial-gradient(ellipse farthest-corner at -65.85% 25%,
+        #17ead9 0%,
+        #6078ea 100%);
+    color: $white;
+
+    &:hover {
+      background: rgb(46, 196, 184);
+      background: radial-gradient(ellipse farthest-corner at -65.85% 25%,
+          #6078ea 0%,
+          #17ead9 100%);
+      color: $white;
+    }
+  }
+}
